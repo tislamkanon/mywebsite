@@ -17,3 +17,11 @@ toggle.addEventListener('change', function() {
         localStorage.setItem('theme', 'light');
     }
 });
+
+// Preloader
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        preloader.classList.add("hidden");
+    }, 500);
+});
